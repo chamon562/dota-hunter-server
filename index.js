@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: false}))
 // express to recongise the req.body as a json object
 app.use(express.json())
 
-// including the controller
+// including the controller middle ware
 app.use('/heroes', require('./routes/heroes'))
 
 // get route
