@@ -12,14 +12,22 @@ let heroSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    client: {
+    heroRole: {
         type: String,
         required: true
     },
     reward: {
         type: Number,
         default: 500
-    }
+    },
+    dead:{
+        type: Boolean,
+        default: false
+    },
+    department: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Department'
+    }   
 })
 
 module.exports = mongoose.model('Hero', heroSchema)

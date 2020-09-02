@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // mMongo Connection String 
-mongoose.connect('mongodb://localhost/bountyhunters', {
+mongoose.connect('mongodb://localhost/dotahunter', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true
@@ -23,4 +23,4 @@ db.on('error', (error)=>{
 })
 
 // Export all the things
-module.exports.Hero = require('./heroes')
+module.exports.Hero = require('./hero')

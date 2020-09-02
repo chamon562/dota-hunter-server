@@ -1,7 +1,7 @@
-const { create } = require('../models/Hero')
+const { create } = require('../models/hero')
 
 // my first rout thats for my heroes and reference models
-const db = required('../models')
+const db = require('../models')
 const router = require('express').Router()
 
 // stub out the routes basic 
@@ -14,6 +14,7 @@ router.get('/', (req, res) =>{
     })
     .catch(error =>{
         console.log('heroes.js 🐝line 14 ', error)
+        res.status(503).send({message: 'Database asleep?'})
     })
     // res.send('GET GET ')
 })
@@ -92,10 +93,9 @@ router.delete('/:id', (req, res) =>{
         res.status(204).send()
     })
     .catch(error =>{
-        console.log(error =>{
-            console.log(error)
-            res.status(503).send({message: 'Server Error'})
-        })
+        console.log(error)
+        res.status(503).send({message: 'Server Error'})
+    
     })
     //  res.send('hit the delete')
 })
