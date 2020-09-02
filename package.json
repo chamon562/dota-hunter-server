@@ -1,0 +1,24 @@
+{
+  "name": "dota-hunter-server",
+  "version": "1.0.0",
+  "description": "This my mongo server for dota.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamon562/dota-hunter-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chamon562/dota-hunter-server/issues"
+  },
+  "homepage": "https://github.com/chamon562/dota-hunter-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2"
+  }
+}
