@@ -15,3 +15,7 @@ app.use('/heroes', require('./routes/heroes'))
 app.get('/', (req, res)=>{
     res.send('This the Home Route to Dota Hunter server🦧')
 })
+
+app.listen(8318,() =>{
+    console.log('This what love sound like❤️')
+})
